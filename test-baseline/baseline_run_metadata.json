@@ -1,0 +1,189 @@
+{
+  "status": "baseline_generation_complete",
+  "python": "3.12.0",
+  "numpy": "2.4.6",
+  "scipy": "1.18.0",
+  "h5py": "3.14.0",
+  "scikit_learn": "1.9.0",
+  "joblib": "1.5.3",
+  "project_root": "C:\\Users\\Khoa Bi\\Downloads\\abc2027_uwb_train_v1\\abc2027_uwb_train_v1",
+  "training_stream_ids": [
+    "train_00",
+    "train_01",
+    "train_02",
+    "train_03",
+    "train_04",
+    "train_05",
+    "train_06",
+    "train_07",
+    "train_08",
+    "train_09",
+    "train_10",
+    "train_11",
+    "train_12"
+  ],
+  "validation_stream_ids": [
+    "val_00",
+    "val_01",
+    "val_02",
+    "val_03",
+    "val_04"
+  ],
+  "test_streams_used": 0,
+  "train_annotations_used": 359,
+  "validation_annotations_written": 119,
+  "validation_annotations_only": true,
+  "config": {
+    "background_tau_s": 3.0,
+    "energy_percentile": 98.0,
+    "energy_min_duration_s": 0.6,
+    "energy_merge_gap_s": 0.8,
+    "window_frames": 200.0,
+    "hop_frames": 50.0,
+    "logistic_threshold": 0.85
+  },
+  "logistic_training": {
+    "window_frames": 200,
+    "hop_frames": 50,
+    "window_label_tiou": 0.1,
+    "ignore_true_train_events": true,
+    "quality_and_needs_review_filtered_for_training": false,
+    "estimator": "StandardScaler + LogisticRegression(max_iter=200, class_weight='balanced')",
+    "random_state": null,
+    "train_streams": {
+      "train_00": {
+        "frames": 88117,
+        "windows": 1759,
+        "positive_windows": 138,
+        "fall_events_used": 30,
+        "elapsed_s": 6.414
+      },
+      "train_01": {
+        "frames": 88147,
+        "windows": 1759,
+        "positive_windows": 143,
+        "fall_events_used": 29,
+        "elapsed_s": 5.768
+      },
+      "train_02": {
+        "frames": 85923,
+        "windows": 1715,
+        "positive_windows": 121,
+        "fall_events_used": 25,
+        "elapsed_s": 5.76
+      },
+      "train_03": {
+        "frames": 88085,
+        "windows": 1758,
+        "positive_windows": 143,
+        "fall_events_used": 29,
+        "elapsed_s": 6.272
+      },
+      "train_04": {
+        "frames": 88243,
+        "windows": 1761,
+        "positive_windows": 123,
+        "fall_events_used": 26,
+        "elapsed_s": 7.264
+      },
+      "train_05": {
+        "frames": 88327,
+        "windows": 1763,
+        "positive_windows": 162,
+        "fall_events_used": 34,
+        "elapsed_s": 6.201
+      },
+      "train_06": {
+        "frames": 88356,
+        "windows": 1764,
+        "positive_windows": 131,
+        "fall_events_used": 27,
+        "elapsed_s": 6.767
+      },
+      "train_07": {
+        "frames": 88311,
+        "windows": 1763,
+        "positive_windows": 121,
+        "fall_events_used": 25,
+        "elapsed_s": 6.332
+      },
+      "train_08": {
+        "frames": 88371,
+        "windows": 1764,
+        "positive_windows": 127,
+        "fall_events_used": 27,
+        "elapsed_s": 6.14
+      },
+      "train_09": {
+        "frames": 88103,
+        "windows": 1759,
+        "positive_windows": 107,
+        "fall_events_used": 23,
+        "elapsed_s": 2.713
+      },
+      "train_10": {
+        "frames": 88014,
+        "windows": 1757,
+        "positive_windows": 128,
+        "fall_events_used": 27,
+        "elapsed_s": 2.715
+      },
+      "train_11": {
+        "frames": 87941,
+        "windows": 1755,
+        "positive_windows": 157,
+        "fall_events_used": 33,
+        "elapsed_s": 2.55
+      },
+      "train_12": {
+        "frames": 56797,
+        "windows": 1132,
+        "positive_windows": 110,
+        "fall_events_used": 24,
+        "elapsed_s": 1.656
+      }
+    },
+    "n_windows": 22209,
+    "n_positive_windows": 1711,
+    "n_negative_windows": 20498
+  },
+  "validation_durations_s": {
+    "val_00": 1763.78,
+    "val_01": 1768.42,
+    "val_02": 1761.68,
+    "val_03": 1770.52,
+    "val_04": 311.4
+  },
+  "prediction_counts": {
+    "energy": 140,
+    "logistic": 86
+  },
+  "energy_predictions_exactly_match_sample_submission": true,
+  "sample_submission_event_rows": 140,
+  "outputs": {
+    "validation_events": "C:\\Users\\Khoa Bi\\.codex\\visualizations\\2026\\10\\25\\01a172be-4bf3-74f1-918a-0f37a1cd97c6\\abc2027-run-bdd393912ede4d98a0f8c824c5c71a8b\\validation_events.csv",
+    "energy_predictions": "C:\\Users\\Khoa Bi\\.codex\\visualizations\\2026\\10\\25\\01a172be-4bf3-74f1-918a-0f37a1cd97c6\\abc2027-run-bdd393912ede4d98a0f8c824c5c71a8b\\energy_predictions.csv",
+    "logistic_predictions": "C:\\Users\\Khoa Bi\\.codex\\visualizations\\2026\\10\\25\\01a172be-4bf3-74f1-918a-0f37a1cd97c6\\abc2027-run-bdd393912ede4d98a0f8c824c5c71a8b\\logistic_predictions.csv",
+    "logistic_model": "C:\\Users\\Khoa Bi\\.codex\\visualizations\\2026\\10\\25\\01a172be-4bf3-74f1-918a-0f37a1cd97c6\\abc2027-run-bdd393912ede4d98a0f8c824c5c71a8b\\logistic_model.joblib"
+  },
+  "timing_seconds": {
+    "energy_by_stream": {
+      "val_00": 6.035432500008028,
+      "val_01": 5.019655800002511,
+      "val_02": 5.947618200007128,
+      "val_03": 4.388407199992798,
+      "val_04": 1.074335199999041
+    },
+    "energy_total": 23.41816509999626,
+    "logistic_train_feature_extraction_total": 67.77124550000008,
+    "logistic_fit": 0.04845170000044163,
+    "logistic_validation_prediction_by_stream": {
+      "val_00": 2.7644249000004493,
+      "val_01": 2.5758107000001473,
+      "val_02": 2.446023700002115,
+      "val_03": 2.70176260000153,
+      "val_04": 0.46941980000701733
+    },
+    "logistic_validation_prediction_total": 11.229095899994718
+  }
+}
