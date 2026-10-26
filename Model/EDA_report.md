@@ -214,3 +214,5 @@ nhiên, để phát hiện fall thực tế cần thực hiện thêm các bư�
 4. Chạy inference trên từng stream.
 5. Đánh giá bằng metric chính thức của ABC2027.
 
+## 11. Hình ảnh
+![Hình ảnh EDA Center Range Bin](../assets/__results___1_1.png)
