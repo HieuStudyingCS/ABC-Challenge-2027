@@ -1,0 +1,80 @@
+# Dataset and generated data
+Dataset/
+dataset/
+data/
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.parquet
+
+# Model checkpoints and experiment outputs
+checkpoints/
+checkpoint/
+weights/
+models/
+outputs/
+results/
+logs/
+wandb/
+mlruns/
+tensorboard/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+submission.csv
+report.json
+
+# Python cache and tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# IDE and editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.secret
